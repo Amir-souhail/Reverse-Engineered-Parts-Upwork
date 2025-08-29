@@ -44,15 +44,15 @@ A showcase of selected reverse-engineered models and assemblies.
 
 <div align="center">
 
-**Gear Box Housing** <img src="Gearbox Housing Cover Plate/Gearbox Housing Cover Plate.JPG" alt="Gearbox Housing Cover Plate" width="300"/>
+**Gear Box Housing** 
+
+<img src="Gearbox Housing Cover Plate/Gearbox Housing Cover Plate.JPG" alt="Gearbox Housing Cover Plate" width="300"/>
 
 
 
 
 
-</div>
 
-> Replace `path/to/imageX.png` with the actual path of your renders or screenshots in the repository. Update the gallery as new projects are added.
 
 ---
 
