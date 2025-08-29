@@ -1,6 +1,4 @@
-Perfect! Here’s the **enhanced GitHub-style README** with a clean, visually appealing gallery layout using Markdown. This format will make your images appear neatly on the repository front page.
 
----
 
 # Reverse-Engineered Projects & Parts
 
@@ -46,11 +44,11 @@ A showcase of selected reverse-engineered models and assemblies.
 
 <div align="center">
 
-**Example Part 1** <img src="Gearbox Housing Cover Plate/Gearbox Housing Cover Plate.JPG" alt="Gearbox Housing Cover Plate" width="300"/>
+**Gear Box Housing** <img src="Gearbox Housing Cover Plate/Gearbox Housing Cover Plate.JPG" alt="Gearbox Housing Cover Plate" width="300"/>
 
-**Example Part 2** <img src="path/to/image2.png" alt="Example Part 2" width="300"/>
 
-**Example Assembly 1** <img src="path/to/image3.png" alt="Example Assembly 1" width="300"/>
+
+
 
 </div>
 
@@ -72,6 +70,4 @@ A showcase of selected reverse-engineered models and assemblies.
 * Organize projects by **categories and complexity**.
 * Explore reverse engineering from **real-world references (photos, videos, or measurements)** in addition to 2D drawings.
 
----
 
-If you want, I can **also add a ready-to-use template snippet** so that each new project you add automatically appears in the gallery with minimal editing—making the README **self-updating and organized**. Do you want me to do that?
