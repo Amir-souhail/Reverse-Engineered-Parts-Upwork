@@ -46,7 +46,7 @@ A showcase of selected reverse-engineered models and assemblies.
 
 <div align="center">
 
-**Example Part 1** <img src="path/to/image1.png" alt="Example Part 1" width="300"/>
+**Example Part 1** <img src="Gearbox Housing Cover Plate/Gearbox Housing Cover Plate.JPG" alt="Gearbox Housing Cover Plate" width="300"/>
 
 **Example Part 2** <img src="path/to/image2.png" alt="Example Part 2" width="300"/>
 
