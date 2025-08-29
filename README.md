@@ -1,4 +1,4 @@
-
+<div align="center">
 
 # Reverse-Engineered Projects & Parts
 
@@ -42,7 +42,7 @@ Each project starts from a **2D technical drawing sourced online**, which I then
 
 A showcase of selected reverse-engineered models and assemblies.
 
-<div align="center">
+
 
 **Gear Box Housing** 
 
