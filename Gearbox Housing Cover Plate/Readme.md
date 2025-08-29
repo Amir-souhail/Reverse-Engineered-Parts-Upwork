@@ -27,10 +27,9 @@ The **Gearbox Housing Cover Plate** is a structural component used in mechanical
 ---
 
 ## 📐 Suggested Materials
-The part is typically made from materials that balance **strength, wear resistance, and machinability**:  
-- **Cast Iron (GG25 / EN-GJL-250)** → Common in gearbox housings for vibration damping.  
-- **Aluminum Alloys (e.g., Al 6061, Al 7075)** → Lightweight option, good for automotive/robotics applications.  
-- **Mild Steel (e.g., C45, EN8)** → For higher load-bearing and durability requirements.  
+- **Cast Iron (GG25 / EN-GJL-250)** → Vibration damping, widely used in gear housings.  
+- **Aluminum Alloys (e.g., Al 6061, Al 7075)** → Lightweight, corrosion resistant.  
+- **Mild Steel (C45 / EN8)** → High strength, durable for industrial use.  
 
 ---
 
@@ -54,10 +53,9 @@ This project emphasizes **reverse engineering** by:
 ## 📚 Engineering Formulas Relevant to the Design
 
 ### 1. **Bolt Preload (Clamping Force)**
-\[
+$$
 F = \frac{T}{K \cdot d}
-\]
-Where:  
+$$
 - \( F \) = Preload force (N)  
 - \( T \) = Applied torque (N·m)  
 - \( K \) = Torque coefficient (~0.2 for steel bolts)  
@@ -66,10 +64,9 @@ Where:
 ---
 
 ### 2. **Bearing Life (L10)**
-\[
-L_{10} = \left(\frac{C}{P}\right)^p \cdot 10^6 \text{ revolutions}
-\]
-Where:  
+$$
+L_{10} = \left(\frac{C}{P}\right)^p \cdot 10^6
+$$
 - \( L_{10} \) = Bearing life (revolutions at 90% reliability)  
 - \( C \) = Dynamic load rating (N)  
 - \( P \) = Equivalent dynamic bearing load (N)  
@@ -78,32 +75,29 @@ Where:
 ---
 
 ### 3. **Bending Stress in Plate**
-\[
+$$
 \sigma = \frac{M \cdot y}{I}
-\]
-Where:  
+$$
 - \( \sigma \) = Bending stress (MPa)  
 - \( M \) = Applied moment (N·mm)  
 - \( y \) = Distance from neutral axis (mm)  
-- \( I \) = Moment of inertia of the section (mm⁴)  
+- \( I \) = Moment of inertia (mm⁴)  
 
 ---
 
-### 4. **Safety Factor (FS)**
-\[
+### 4. **Safety Factor**
+$$
 FS = \frac{\sigma_{yield}}{\sigma_{working}}
-\]
-Where:  
+$$
 - \( \sigma_{yield} \) = Yield strength of material (MPa)  
-- \( \sigma_{working} \) = Actual stress in operation (MPa)  
+- \( \sigma_{working} \) = Actual stress (MPa)  
 
 ---
 
 ### 5. **Shear Stress on Bolts**
-\[
+$$
 \tau = \frac{F}{A}
-\]
-Where:  
+$$
 - \( \tau \) = Shear stress (MPa)  
 - \( F \) = Applied shear force (N)  
 - \( A \) = Cross-sectional area of bolt (mm²)  
