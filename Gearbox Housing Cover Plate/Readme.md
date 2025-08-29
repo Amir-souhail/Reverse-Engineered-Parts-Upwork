@@ -1,120 +1,118 @@
 # Gearbox Housing Cover Plate (Reverse Engineering Project)
 
 ## 📌 Project Overview
-This project is a **reverse engineered 3D CAD model** of a **Gearbox Housing Cover Plate**.  
-The original **2D technical drawing** was taken from publicly available sources, and the 3D model was completely regenerated from scratch using **SolidWorks**.  
+This repository contains a **reverse-engineered 3D CAD model** of a **Gearbox Housing Cover Plate**.  
+A publicly available **2D drawing** was used as reference, and the entire 3D geometry was **rebuilt from scratch** in SolidWorks to capture design intent, tolerances, and manufacturability.
 
-The main theme of this project is **Reverse Engineering** – converting incomplete or reference 2D documentation into a functional and fully defined 3D CAD part.
+**Theme:** *Reverse Engineering* — turning incomplete or reference 2D documentation into a fully defined parametric 3D model.
 
 ---
 
-## 🛠️ Description of the Part
-The **Gearbox Housing Cover Plate** is a structural component used in mechanical assemblies such as gearboxes, pumps, or compressors. Its primary roles include:  
-- Supporting **bearings and shafts** through precision holes (H6/J6 fits).  
-- Serving as a **cover plate** to seal one side of a gearbox or machinery housing.  
-- Ensuring **shaft alignment** and structural stability of gears or rotating components.  
-- Allowing **bolted mounting** to the main body through distributed holes.  
-- Providing **oil flow channels and recesses** for lubrication.  
+## 🛠️ Part Description
+A structural cover used in gearboxes/pumps to:
+- Support and align **shafts/bearings** via precision bores (e.g., H6/J6 fits).
+- Seal a housing face and maintain internal **lubrication**.
+- Provide **bolt-down** mounting and stiffness with ribs/pockets.
+- Offer **clearance** for rotating elements via recessed cavities and channels.
 
 ---
 
 ## 🔧 Key Features
-- **Bearing seats (Ø30 H6, Ø53 J6, Ø45, Ø70)** → For supporting and aligning gear shafts.  
-- **Perimeter mounting holes (Ø12, M6 threaded)** → For securing the plate to a gearbox body.  
-- **Multiple cutouts and recesses** → For weight reduction and clearance for gears.  
-- **Oil grooves & cavity sections** → Indicate use in lubricated systems such as gearboxes.  
+- Precision bearing seats: **Ø30 H6**, **Ø53 J6**, **Ø45**, **Ø70**.
+- Through and threaded mounting holes (e.g., **Ø12**, **M6**).
+- Weight-relief pockets, oil grooves, and sealing land.
+- Perimeter geometry tailored for gasket/RTV sealing.
 
 ---
 
-## 📐 Suggested Materials
-- **Cast Iron (GG25 / EN-GJL-250)** → Vibration damping, widely used in gear housings.  
-- **Aluminum Alloys (e.g., Al 6061, Al 7075)** → Lightweight, corrosion resistant.  
-- **Mild Steel (C45 / EN8)** → High strength, durable for industrial use.  
+## 🧱 Suggested Materials
+- **Cast Iron (EN-GJL-250 / GG25):** excellent damping; classic gearbox material.  
+- **Aluminum (6061-T6 / 7075-T6):** light, corrosion resistant; good for weight-critical builds.  
+- **Medium Carbon Steel (C45 / EN8):** strong and machinable for rugged service.
 
 ---
 
-## ⚙️ Possible Applications
-- Gearbox assemblies (industrial machinery, automotive).  
-- Pump housing covers (oil pumps, compressors).  
-- Motor mounting or end plates.  
-- Any **machinery requiring precise shaft and bearing alignment**.  
+## 🚜 Typical Applications
+- Industrial gearboxes, reducers, and pump housings.  
+- Compressor/motor end plates requiring accurate shaft alignment.  
+- General machinery covers with integrated bearing bores.
 
 ---
 
-## 📊 Reverse Engineering Theme
-This project emphasizes **reverse engineering** by:  
-- Extracting design intent from **2D drawings**.  
-- Reconstructing a **parametric 3D model** in SolidWorks.  
-- Ensuring **assembly feasibility** through dimensional tolerances (H6/J6 fits).  
-- Preparing the part for **future modifications, 3D printing, or CNC machining**.  
+## 🔁 Reverse Engineering Notes
+- Derived all **parametric dimensions** from the 2D drawing.  
+- Recreated **datums**, **fits** (H6/J6), and **pattern features**.  
+- Produced a model suitable for **CNC**, **casting**, or **3D printing**.  
+- Verified design with basic **stress/fit checks** (see formulas below).
 
 ---
 
-## 📚 Engineering Formulas Relevant to the Design
+## 📚 Engineering Formulas (GitHub-friendly LaTeX)
 
-### 1. **Bolt Preload (Clamping Force)**
+### 1) Bolt Preload (clamping force)
 $$
-F = \frac{T}{K \cdot d}
+F=\frac{T}{K\,d}
 $$
-- \( F \) = Preload force (N)  
-- \( T \) = Applied torque (N·m)  
-- \( K \) = Torque coefficient (~0.2 for steel bolts)  
-- \( d \) = Nominal bolt diameter (m)  
+- $F$ — preload force (N)  
+- $T$ — tightening torque (N·m)  
+- $K$ — nut/bolt torque factor (≈ 0.18–0.25 for lubricated steel)  
+- $d$ — nominal bolt diameter (m)
+
+### 2) Bearing Life (basic rating life, $L_{10}$)
+$$
+L_{10}=\left(\frac{C}{P}\right)^{p}\cdot10^{6}
+$$
+- $L_{10}$ — life (revolutions, 90% reliability)  
+- $C$ — bearing dynamic rating (N)  
+- $P$ — equivalent dynamic load (N)  
+- $p=3$ (ball), $p=10/3$ (roller)
+
+### 3) Bending stress in the plate
+$$
+\sigma=\frac{M\,y}{I}
+$$
+- $\sigma$ — bending stress (MPa)  
+- $M$ — bending moment (N·mm)  
+- $y$ — distance from neutral axis (mm)  
+- $I$ — second moment of area (mm$^{4}$)
+
+### 4) Safety factor
+$$
+FS=\frac{\sigma_{y}}{\sigma_{w}}
+$$
+- $\sigma_{y}$ — yield strength of material (MPa)  
+- $\sigma_{w}$ — working (computed) stress (MPa)
+
+### 5) Shear stress on bolts/pins
+$$
+\tau=\frac{F}{A}
+$$
+- $\tau$ — shear stress (MPa)  
+- $F$ — applied shear force (N)  
+- $A$ — resisting area (mm$^{2}$)
+
+### 6) True position of a hole (GD\&T)
+$$
+\text{TP}=2\sqrt{(\Delta x)^{2}+(\Delta y)^{2}}
+$$
+- $\text{TP}$ — true position tolerance diameter (mm)
+
+### 7) Clearance / interference (fit check)
+$$
+C = D_{\text{hole}}-d_{\text{shaft}}
+$$
+- $C>0$ — clearance fit, \; $C<0$ — interference fit
 
 ---
 
-### 2. **Bearing Life (L10)**
-$$
-L_{10} = \left(\frac{C}{P}\right)^p \cdot 10^6
-$$
-- \( L_{10} \) = Bearing life (revolutions at 90% reliability)  
-- \( C \) = Dynamic load rating (N)  
-- \( P \) = Equivalent dynamic bearing load (N)  
-- \( p \) = 3 (ball bearings), 10/3 (roller bearings)  
-
----
-
-### 3. **Bending Stress in Plate**
-$$
-\sigma = \frac{M \cdot y}{I}
-$$
-- \( \sigma \) = Bending stress (MPa)  
-- \( M \) = Applied moment (N·mm)  
-- \( y \) = Distance from neutral axis (mm)  
-- \( I \) = Moment of inertia (mm⁴)  
-
----
-
-### 4. **Safety Factor**
-$$
-FS = \frac{\sigma_{yield}}{\sigma_{working}}
-$$
-- \( \sigma_{yield} \) = Yield strength of material (MPa)  
-- \( \sigma_{working} \) = Actual stress (MPa)  
-
----
-
-### 5. **Shear Stress on Bolts**
-$$
-\tau = \frac{F}{A}
-$$
-- \( \tau \) = Shear stress (MPa)  
-- \( F \) = Applied shear force (N)  
-- \( A \) = Cross-sectional area of bolt (mm²)  
-
----
-
-## 📂 Project Files
-- **3D CAD Model (SolidWorks)**  
-- **Technical Drawing (2D to 3D regeneration)**  
-- **PDF Documentation**  
+## 📂 What’s Included
+- SolidWorks 3D model (parametric).  
+- Drawing/PDF for documentation.  
+- This README with on-page, GitHub-rendered formulas.
 
 ---
 
 ## 👤 Author
 **Amir Souhail**  
-Research and Development Engineer  
-Autonomous Underwater Vehicle – La Spezia, Italy  
-📧 amir.souhail@gmail.com  
-
----
+Research & Development Engineer, AUV — La Spezia, Italy  
+📧 amir.souhail@gmail.com
