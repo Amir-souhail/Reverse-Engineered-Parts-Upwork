@@ -62,7 +62,7 @@ This makes the part both a **protective cover** and a **structural support** ele
 <div align="center">
 
 **3D Model Render**  
-<img src="EXERCISE 257 REGENRATED.JPG" alt="EXERCISE 257 REGENRATED" width="800"/>  
+<img src="EXERCISE 257 REGENRATED.JPG" alt="EXERCISE 257 REGENRATED" width="1200"/>  
 
 </div>  
 
