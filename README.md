@@ -46,11 +46,11 @@ A showcase of selected reverse-engineered models and assemblies.
 
 **Gear Box Housing** 
 
-<img src="Gearbox Housing Cover Plate/Gearbox Housing Cover Plate.JPG" alt="Gearbox Housing Cover Plate" width="300"/>
+<img src="Gearbox Housing Cover Plate/Gearbox Housing Cover Plate.JPG" alt="Gearbox Housing Cover Plate" width="500"/>
 
 **Cover Plate** 
 
-<img src="Cover Plate (Exercise 257)/EXERCISE 257 REGENRATED.JPG" alt="EXERCISE 257 REGENRATED.JPG" width="300"/>
+<img src="Cover Plate (Exercise 257)/EXERCISE 257 REGENRATED.JPG" alt="EXERCISE 257 REGENRATED.JPG" width="500"/>
 
 
 
