@@ -47,6 +47,23 @@ This omission created a mismatch between the **front view dimensions** and the *
 
 ---
 
+
+## 📂 Files in This Folder
+
+This folder contains multiple formats of the **Mount Plate** model and drawings for compatibility and sharing:
+
+- **Mount_Plate.SLDPRT** → SOLIDWORKS part file (native CAD model).  
+- **Mount_Plate.SLDDRW** → SOLIDWORKS 2D drawing file.  
+- **Mount_Plate.PDF** → PDF export of the 2D drawing for easy viewing.  
+- **Mount_Plate.STEP** → Neutral CAD format for sharing across CAD software.  
+- **Mount_Plate.DXF** → Flat pattern export for sheet metal manufacturing (laser/waterjet cutting).  
+- **Mount_Plate.STL** → Mesh format for 3D printing or quick visualization.  
+
+---
+
+
+
+
 ## 🏷️ Ownership & Attribution
 
 - The original **Mount Plate design** is the **property of Prad Equipments Pvt Ltd**.  
