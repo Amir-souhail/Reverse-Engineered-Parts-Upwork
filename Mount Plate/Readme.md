@@ -1,99 +1,73 @@
 
 
-# Reverse-Engineered Projects & Parts
+# Reverse-Engineered Part: Mount Plate
 
-This repository contains my collection of **reverse-engineered parts and projects** created in **SOLIDWORKS 2025**.  
-Each project starts from a **2D technical drawing** (sourced online or from a job reference), which I then use to:
-
-* Recreate an accurate **3D CAD model**.  
-* Regenerate the **2D engineering drawing** based on my 3D model.  
-* (When applicable) Build complete **assemblies**.  
+This project contains my **reverse-engineered CAD model** of a **Mount Plate**, created in **SOLIDWORKS 2025**.  
+The original design is the **property of Prad Equipments Pvt Ltd**.  
+I have **recreated the 3D model and 2D drawing** purely for **educational and portfolio purposes**.
 
 ---
 
-## 📌 Purpose
+## 📌 Part Overview
 
-* Strengthen my skills in **3D CAD modeling** and **technical drawing recreation**.  
-* Develop a personal library of **reverse-engineered components and assemblies**.  
-* Practice generating **engineering drawings** from models.  
-* Document my workflow and methodology as part of my learning journey.  
+The **Mount Plate** is a sheet metal structural component used to **support and secure cylindrical elements** such as motors, bearings, or shafts.  
+It is designed with a bent **L-shaped profile** for stability, providing a strong mounting base while keeping the assembly compact.
+
+### 🔎 Key Characteristics:
+- **Central Circular Cutout (Ø94 mm)** → For holding a cylindrical component such as a **motor housing or bearing**.  
+- **Two Through Holes (Ø10 mm)** → For fasteners that secure the mounted component.  
+- **Slotted Holes on the Base** → Allow for **adjustable mounting**, enabling flexibility during alignment.  
+- **L-Bend Geometry** → Provides rigidity and allows vertical components to be fixed onto a flat surface.  
+- **Fillets & Rounded Edges** → Reduce stress concentration and improve manufacturability.  
+
+---
+
+## ⚠️ Key Challenge: K-Factor & Dimensional Mismatch
+
+One tricky aspect of this drawing is that the **K-Factor (bend allowance)** was **not defined**.  
+This omission created a mismatch between the **front view dimensions** and the **flat pattern dimensions** when modeled in SOLIDWORKS.
+
+- **SOLIDWORKS default K-Factor = 0.5** (neutral axis at mid-thickness).  
+- **Actual requirement = 0.33**.  
+- With the default value, the developed flat length and folded dimensions **did not add up correctly**.  
+- Once adjusted to **K-Factor = 0.33**, the flat pattern and front view dimensions matched the drawing.  
+
+👉 This case highlights the importance of explicitly specifying **bend allowance/K-Factor** in technical drawings to ensure correct flat patterns during manufacturing.  
 
 ---
 
 ## 🛠️ Tools & Workflow
 
-1. Collect **2D drawings** (publicly available or company references).  
-2. Recreate the **3D CAD model** in SOLIDWORKS.  
-3. **Regenerate the 2D drawing** from the 3D model.  
-4. Export parts, assemblies, and drawings in **neutral CAD formats**.  
-5. Document assumptions, challenges, and references for each project.  
-
----
-
-## 🖼️ Gallery of Projects
-
-### 🔹 Gearbox Housing Cover Plate  
-- Based on a **public exercise drawing**.  
-- Reverse-engineered to recreate the part geometry and 2D drawings.  
-
-<img src="Gearbox Housing Cover Plate/Gearbox Housing Cover Plate.JPG" alt="Gearbox Housing Cover Plate" width="300"/>
-
----
-
-### 🔹 Support Arm / Bracket  
-- Based on a **public technical drawing**.  
-- A **triangular structural arm** with ribs and multiple holes for shafts/pivots.  
-- Likely used as a **lever arm or support bracket** in machinery.  
-
-<img src="Support Arm Bracket/Support_Arm_Bracket.JPG" alt="Support Arm Bracket" width="300"/>
-
----
-
-### 🔹 Mount Plate  
-- Original design is the **property of Prad Equipments Pvt Ltd** (sourced from an Upwork job post).  
-- Reverse-engineered in **SOLIDWORKS sheet metal** for educational purposes.  
-
-#### ⚠️ Key Challenge: K-Factor Ambiguity
-One tricky aspect of this drawing is that the **K-Factor (bend allowance)** was **not defined**.  
-This caused a mismatch between the **front view dimensions** and the **flat pattern dimensions** when modeled in SOLIDWORKS.  
-
-- **SOLIDWORKS default K-Factor = 0.5** (neutral axis at mid-thickness).  
-- **Actual drawing requirement = 0.33**.  
-- Because of this difference, the **developed flat length** and the **folded front view length** did not add up until the correct **K-Factor (0.33)** was applied.  
-
-👉 This highlights the importance of explicitly specifying **bend allowance/K-Factor** in technical drawings to avoid confusion during manufacturing or reverse engineering.  
-
-<img src="Mount Plate/Mount_Plate.JPG" alt="Mount Plate" width="300"/>
+1. Start from the **2D reference drawing** (property of Prad Equipments Pvt Ltd).  
+2. Recreate the **3D CAD model** in SOLIDWORKS using sheet metal features.  
+3. Apply **cutouts, slots, and bends** as per the drawing.  
+4. Adjust **K-Factor** to 0.33 to match drawing intent.  
+5. Regenerate the **2D drawing** from the 3D model.  
+6. Document assumptions and note dimensional ambiguities.  
 
 ---
 
 ## 🏷️ Ownership & Attribution
 
-This repository contains a mix of **reverse-engineered models from public drawings** and **models recreated from company-owned references**.  
-All work is done solely for **educational, portfolio, and skill development purposes**.  
-
-### 🔹 Educational References
-- **Gearbox Housing Cover Plate** → Based on a publicly available exercise drawing.  
-- **Support Arm / Bracket** → Based on a publicly available technical drawing.  
-
-### 🔹 Company-Owned References
-- **Mount Plate** → Original design is the **property of Prad Equipments Pvt Ltd**.  
-  - My recreation is **for portfolio purposes only** and not intended for commercial use.  
+- The original **Mount Plate design** is the **property of Prad Equipments Pvt Ltd**.  
+- This reverse-engineered version was created **only for educational and portfolio purposes**.  
+- No commercial use or redistribution is intended.  
 
 ---
 
 ⚠️ **Disclaimer:**  
-No proprietary or confidential information is shared in this repository.  
-All models here are either recreated from **publicly available sources** or are **company-owned references credited to their rightful owners**.  
-This repository is strictly for **personal learning and showcasing CAD skills**.  
+This project does not contain any proprietary information.  
+It is a **recreation based on a publicly shared job drawing** and is included here solely to demonstrate my **CAD modeling and reverse engineering skills**.  
 
 ---
 
 ## 🚀 Future Scope
 
-* Expand with more **mechanical parts, assemblies, and detailed drawings**.  
-* Organize projects by **categories and complexity**.  
-* Explore reverse engineering from **real-world references (photos, videos, or measurements)** in addition to 2D drawings.  
-* Add **FEA and motion studies** for selected parts.  
-* Perform **K-Factor comparison studies** to demonstrate sheet metal design accuracy.  
+* Perform **finite element analysis (FEA)** to test load capacity.  
+* Compare results of **different K-Factors and bend allowances**.  
+* Extend this into an **assembly project** with the mounted component.  
+* Document a general **best-practice workflow for sheet metal parts**.  
 
+
+
+Do you also want me to **include a small table in the README** showing the **dimension mismatch with K=0.5 vs corrected K=0.33**? That would make the problem (and your solution) very clear to recruiters/clients.
