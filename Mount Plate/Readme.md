@@ -1,8 +1,5 @@
 
 
-```markdown
-<div align="center">
-
 # Reverse-Engineered Projects & Parts
 
 This repository contains my collection of **reverse-engineered parts and projects** created in **SOLIDWORKS 2025**.  
@@ -99,9 +96,4 @@ This repository is strictly for **personal learning and showcasing CAD skills**.
 * Explore reverse engineering from **real-world references (photos, videos, or measurements)** in addition to 2D drawings.  
 * Add **FEA and motion studies** for selected parts.  
 * Perform **K-Factor comparison studies** to demonstrate sheet metal design accuracy.  
-
-</div>
-```
-
----
 
