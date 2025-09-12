@@ -1,4 +1,4 @@
-<div align="center">
+
 
 # 3D Visualization Project: Metal Components (FB6H, FB4H, UA7H, UA3H, UA2H8)
 
@@ -62,4 +62,3 @@ For each part (**FB6H, FB4H, UA7H, UA3H, UA2H8**):
 This project demonstrates my **CAD modeling and 3D visualization skills** using a provided reference specification.  
 It does not disclose any proprietary or confidential design information beyond what was included in the shared reference.  
 
-</div>
