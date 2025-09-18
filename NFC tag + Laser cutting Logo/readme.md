@@ -1,5 +1,4 @@
 
-<div align="center">
 
 # NFC Tag Holder – Custom Client Design
 
